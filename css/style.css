@@ -1,21 +1,23 @@
 body{
 
-  
     /* display: flex;
     flex-direction: column; */
-   /*  min-height: 100vh; */
+    /*  min-height: 100vh; */
     background: rgb(93,168,165);
     background: linear-gradient(306deg, rgba(93,168,165,1) 32%, rgba(0,128,128,1) 58%, rgba(175,170,210,1) 100%);
-
+    overflow: auto;
+    
 }
 main{
+    min-height: 100vh; 
+/*     border: red solid 2px; */
 /*    position: relative;
    bottom: 0; */
-   padding: 20px;
+  /*  padding: 20px; */
    /*  height: 100vh; */
     /* flex-grow: 1; */
  /*    border: red 3px solid; */
- min-height: 110vh;
+ 
  margin-bottom: -100px;
 
 }
@@ -123,6 +125,7 @@ h3{
     display: inline;
     z-index: 1;
     color: white;
+    user-select: none;
 
     
 }
@@ -143,6 +146,7 @@ li:hover {
 text-decoration: underline;
 font-size: 1.5rem;
 transition: 0.2s;
+cursor: pointer;
 }
           
 
@@ -270,9 +274,9 @@ button{
 
 
 
-#footerspace{
+/* #footerspace{
     height: 100px;
-}
+} */
    
 footer {
     
@@ -284,9 +288,14 @@ footer {
     flex-shrink: 0; 
    
    height: 100px;
+/* position: relative;
+z-index: 2090; */ 
    
 }
 
+.footerlist{
+    margin-top: auto;
+}
 
 
 
@@ -333,28 +342,43 @@ footer {
     
     }
 }
+
   
     /* Responsivt design stuff */
 
-@media screen and (min-width: 801px) {
+/*     @media screen and (max-height: 800px){
 
+        body{
+            height: 1000px;
+        }
     main{
        
         padding: 20px;
-        height: 100vh;
+        height: 1500px;
      
       /*   border: rgb(128, 0, 23) 3px solid; */
-     }
+ /*     }
+    }
 
+    footer{
+        position: absolute;
+        bottom: 0;
+    } */ 
+
+@media screen and (min-width: 801px) {
+    main {
+        padding: 20px;
+        min-height: 100vh; /* Bruk min-height for å sikre at det fyller skjermhøyden, men tillater vekst */
+        box-sizing: border-box; /* Inkluderer padding i høydeberegningen */
+    }
 }
-
 
 @media screen and (max-width: 800px) {
 
     main{
        
         padding: 20px;
-        height: 110vh;
+        height: 35rem;
      
        /*  border: green 3px solid; */
      }
@@ -391,11 +415,12 @@ footer {
         margin-bottom: 20px;
        /*   border: yellow 3px solid; */
      }
-
+/* 
      footer{
         position: static;
         bottom: 0;
-     }
+        
+     } */
 .product{
     width: 20rem;
 }
@@ -404,7 +429,7 @@ footer {
 
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) { /* Known bug, if at exactly 480, might cause issues with features desktop and desgin for mobile merging, and vice versa*/
 
 
     
@@ -450,7 +475,7 @@ main{
         border-radius: 15px;
        /*  padding: 1rem; */
         overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
         transition: none; /* Ingen overganger */
         transform: none; /* Ingen skalering */
 
@@ -491,7 +516,567 @@ main{
 
     .product:hover {
         transform: none;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        body{
+
+            /* display: flex;
+            flex-direction: column; */
+            /*  min-height: 100vh; */
+            background: rgb(93,168,165);
+            background: linear-gradient(306deg, rgba(93,168,165,1) 32%, rgba(0,128,128,1) 58%, rgba(175,170,210,1) 100%);
+            overflow: auto;
+            
+        }
+        main{
+            min-height: 100vh; 
+        /*     border: red solid 2px; */
+        /*    position: relative;
+           bottom: 0; */
+          /*  padding: 20px; */
+           /*  height: 100vh; */
+            /* flex-grow: 1; */
+         /*    border: red 3px solid; */
+         
+         margin-bottom: -100px;
+        
+        }
+        
+        header{
+        
+            background: rgb(93,168,165);
+            background: linear-gradient(306deg, rgba(93,168,165,1) 32%, rgba(0,128,128,1) 58%, rgba(175,170,210,1) 100%);
+        
+        color: aliceblue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        position: relative;
+        
+        }
+        
+        
+        h1{
+            font-family: Castoro Titling;
+            font-size: 3rem;
+            margin: 0;
+            transition: 0.4s;
+        }
+        
+        h1:hover{
+            font-size: 3.2rem;
+            transition: 0.2s;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0; 
+            margin: 0; 
+            display: flex; 
+            gap: 1rem; 
+        }
+        
+        li{
+          margin: 1rem;
+          font-size: 1rem;
+          font-family: work sans, sans-serif;
+          transition: 0.4s;
+        }
+        
+        
+        
+        .product-container{
+            display: flex;
+            flex-direction: row ;
+            flex-wrap: wrap;
+            flex: 1;
+            justify-content: space-around;
+            gap: 20px;
+            transition: 0.5s;
+            height: 40rem;
+        /*     background-color: #c3ffe3;
+            border-radius: 15px; */
+           
+            padding-bottom: 2rem;
+        
+         /*    border: blue  3px solid; */
+            margin-bottom: 40px;
+            
+            
+        }
+        
+        .product{
+            
+            position: relative;
+            top: 2rem;
+            background-color: #fafcfc;
+            /* border: 2px green solid; */
+            width: 16rem;
+            height: 70%;
+            
+            margin: 20px;
+        
+            overflow: hidden;
+        
+            box-shadow: 10px 10px rgb( 0, 69, 69);  
+            transition: 0.5s;  
+        }
+        
+        
+        
+        .product-title-bg{
+            background-color: #008080;
+            z-index: 3;
+        
+            width: 100%;
+            height: 3rem;
+        
+        
+        }
+        
+        
+        h3{
+            position: relative;
+            top: 1rem;
+            font-family: Castoro Titling;
+            font-size: 1.5rem;
+            padding-left: 1rem;
+            display: inline;
+            z-index: 1;
+            color: white;
+            user-select: none;
+        
+            
+        }
+        
+        a:link {
+            color: white;
+            text-decoration: none;
+            }
+        a:visited {
+            color: white;
+            text-decoration: none;
+        }
+        
+        a:active {
+            text-decoration: underline;
+        }
+        li:hover {
+        text-decoration: underline;
+        font-size: 1.5rem;
+        transition: 0.2s;
+        cursor: pointer;
+        }
+                  
+        
+        .button{
+        
+         margin-left: 1rem;
+         margin-bottom: 1rem;
+        /*  border: 2px solid black ; */
+         border-radius: 0.3rem;
+         user-select: none;
+        
+         position: relative;
+         /* bottom: 2rem; */
+         padding: 10px;
+         margin-top: 10px;
+         transform: translateY(-50%);
+         font-size: medium;
+        
+         cursor: pointer;
+        
+        }
+        
+        .img-container{
+            position: relative;
+            top: 0%;
+        
+            width: 100%;
+            height: 20rem;
+           /*  border: red 2px solid; */
+            
+            overflow: hidden;
+            transition: 0.5s;
+        }
+        
+        /* .img-container > div {
+            aspect-ratio: 3 / 2;
+          } */
+          
+        
+        img{
+        
+            height: 100%;
+           transform: translateX(-20%);
+            transition: 0.5s;
+        }
+        
+        
+        
+        article{
+          
+           padding: 1rem;
+            font-family: sans-serif;
+            box-shadow: -10px -1px 40px #000000;
+        
+            bottom: 0rem;
+            border: rgb(0, 128, 128) 2px solid;
+            background-color: rgba(0, 128, 128, 0.70);
+            color: white;
+            transition: 0.5s;  
+        
+            z-index: 1;
+            position: relative;
+            
+        }
+        
+        /* .txt-wrap{
+            border: red 2px solid;
+            background-color: rgba(0, 128, 128, 0.34);
+            transition: 0.5s;  
+        } */
+        
+        p{
+        
+            font-family: work sans;
+        
+        }
+        
+        
+        
+        
+        
+        button{
+            font-family: work sans;
+        }
+        
+        /* Buttons */
+        
+        .button--buy{
+            background-color: #28a745;
+            color: white;
+            border: 2px solid #218838;
+            
+        }
+        
+        .button--buy:hover{
+            background-color: #218838;
+            border: 2px solid #1e7e34;
+            }
+        .button--buy:active{
+            background-color: #1e7e34;
+            border: 2px solid #155724;
+        }
+        
+        
+        .button--action{
+            background-color: #6c757d;
+            color:white;
+            border: 2px solid #5a6268;
+           
+        }
+        
+        .button--action:hover{
+            background-color:#5a6268;
+            border: 2px solid #545b62;
+        }
+        .button--action:active{
+            background-color: #545b62;
+            border: 2px solid #343a40;
+        }
+        /* 
+        .product:hover button p{
+            visibility: visible;
+            transition: 0.5s;
+        } */
+        
+        
+        
+        /* #footerspace{
+            height: 100px;
+        } */
+           
+        footer {
+            
+            width: 100%;
+            background-color: #6c757d;
+            color: white;
+        
+            text-align: center;
+            flex-shrink: 0; 
+           
+           height: 100px;
+        /* position: relative;
+        z-index: 2090; */ 
+           
+        }
+        
+        .footerlist{
+            margin-top: auto;
+        }
+        
+        
+        
+        
+        /* For different screen sizes */
+        
+        /* Desktop */
+        @media only screen and (min-width: 479px) {
+            
+            .product:hover{
+                transform: scale(1.05); 
+                box-shadow: 5px 10px 10px #004545;    
+                overflow: hidden;
+               
+                
+            }
+        
+        
+            .product:hover article{
+        
+                position: relative;
+                height: 62%;
+                width: 100%;
+                transform: translate(0,-50%);
+                background-color: #008080e6;
+              
+                transition: 0.2s;
+                margin: 0rem;
+               
+                
+            }
+            
+        
+            .product:hover .img-container{
+                top: -20%;
+                transition: 0.2s;
+            }
+            
+            .product:hover img{
+                
+                transition:  0.2s;
+                height: 120%;
+                
+            
+            }
+        }
+        
+          
+            /* Responsivt design stuff */
+        
+        /*     @media screen and (max-height: 800px){
+        
+                body{
+                    height: 1000px;
+                }
+            main{
+               
+                padding: 20px;
+                height: 1500px;
+             
+              /*   border: rgb(128, 0, 23) 3px solid; */
+         /*     }
+            }
+        
+            footer{
+                position: absolute;
+                bottom: 0;
+            } */
+        
+        @media screen and (min-width: 801px) {
+            main {
+                padding: 20px;
+                min-height: 100vh; /* Bruk min-height for å sikre at det fyller skjermhøyden, men tillater vekst */
+                box-sizing: border-box; /* Inkluderer padding i høydeberegningen */
+            }
+        }
+        
+        @media screen and (max-width: 800px) {
+        
+            main{
+               
+                padding: 20px;
+                height: 35rem;
+             
+               /*  border: green 3px solid; */
+             }
+        
+             nav{
+                position: absolute;
+                top: 60%;
+                /* border: red 2px solid; */
+             }
+             header{
+                position: relative;
+                top: 0;
+                width: 100vw;
+                z-index: 4;
+                height: 5rem;
+        
+        
+             }
+             h1{
+                font-size: 2rem;
+                text-align: center;
+                
+             }
+        
+        }
+        
+        
+        @media only screen and (max-width: 690px) {
+        
+            main{
+               
+                padding: 20px;
+                 height: 200vh;
+                margin-bottom: 20px;
+               /*   border: yellow 3px solid; */
+             }
+        /* 
+             footer{
+                position: static;
+                bottom: 0;
+                
+             } */
+        .product{
+            width: 20rem;
+        }
+        
+        }
+        
+        
+        /* Mobile */
+        @media screen and (max-width: 480px) { /* Known bug, if at exactly 480, might cause issues with features desktop and desgin for mobile merging, and vice versa*/
+        
+        
+            
+        /* 
+            header {
+                flex-direction: column; 
+                align-items: flex-start; 
+            }
+        
+            ul {
+                width: 100%; 
+                padding-top: 1rem; 
+                display: block; 
+            }
+        
+            li {
+                margin-bottom: 0.5rem; 
+            }
+        } */
+        
+        main{
+            height: auto;
+           /*  border: red solid 2px; */
+        }
+        
+            .product-container {
+                display: flex;
+                flex-direction: column;
+             /*    border: 2px black solid; */
+                justify-content: space-around;
+                height: auto;
+        
+        
+            }
+        
+            .product {
+                position: relative;
+                background-color: #fafcfc;
+                /* border: 2px black solid; */
+                width: 90%;
+                margin: 1rem auto; 
+                height: auto;
+                border-radius: 15px;
+               /*  padding: 1rem; */
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                transition: none; /* Ingen overganger */
+                transform: none; /* Ingen skalering */
+        
+                
+            }
+        
+            .product-title-bg{
+                
+                position: absolute;
+                
+                background-color: #008080;
+                z-index: 3;
+                
+                width: 100%;
+                height: 3rem;
+            }
+        
+            .img-container {
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                width: 100%; 
+                height: auto; 
+                /* border: red 2px solid; */
+                overflow: hidden;
+                transition: 0.5s;
+            }
+        
+            img {
+                max-width: 100%; 
+                height: auto; 
+                margin: auto;
+                display: block; 
+                
+            }
+        
+        /* Deactivate all transitions etc. */
+        
+            .product:hover {
+                transform: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+                transition: none; 
+               
+            }
+        
+            .product img {
+                width: 100%; 
+                transition: none; 
+                transform: none; 
+            }
+        
+            .button {
+                visibility: visible; 
+                position: relative;
+                margin: 0.5rem 0; 
+                transition: none; 
+                transform: none; 
+                animation: none; 
+            }
+        
+            .product:hover img {
+                visibility: visible; 
+                transition: none; 
+                transform: none; 
+            }
+        
+           
+            * {
+                transition: none !important; 
+                animation: none !important; 
+            }
+        }
+        
+            /* Skrote? */
+        /* @media screen and (max-width: 400px) {
+            #nav-list{
+            visibility: hidden;
+            }
+        }
+         */
+        
+        
+         
         transition: none; 
     }
 
@@ -530,3 +1115,6 @@ main{
     }
 }
  */
+
+
+ 
