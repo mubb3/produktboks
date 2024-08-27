@@ -1,39 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-   <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
+    <link rel="stylesheet" href="css/style.css" />
 
-        </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Castoro+Titling&family=New+Amsterdam&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <h1><a href="index.html">Skobutikken</a></h1>
+     <nav>
+        <ul id="nav-list">
+          <li><a href="">Her kunne det ha vært en link</a></li>
+          <li><a href="">her også</a> </li>
+          <li><a href="html/extra.html">Extras and photocredits</a></li>
+        </ul>
+        
+      </nav>
     </header>
 
-    <main>
-        <section aria-details="product carusel">
-            <div class="product-container">
-            <h3>Produkt1</h3>
-            <img src="images/paul-gaudriault-a-QH9MAAVNI-unsplash.jpg" alt="generic sneaker on yellow background"> <!-- Photo by <a href="https://unsplash.com/@pl_gt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Paul Gaudriault</a> on <a href="https://unsplash.com/photos/unpaired-maroon-plimsoll-on-top-of-yellow-textile-a-QH9MAAVNI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            -->
-            </div>
 
-            <div class="product-container">
-                <h3>Nike</h3>
-            <img src="images/imani-bahati-LxVxPA1LOVM-unsplash.jpg" alt="Nike shoe suspended in air">   <!-- Photo by <a href="https://unsplash.com/@imani_bht?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Imani Bahati</a> on <a href="https://unsplash.com/photos/unpaired-gray-nike-running-shoe-LxVxPA1LOVM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            -->
+
+    
+    <main>
+        
+      <section class="product-container" aria-details="product grid">
+        <div class="product">
+            <div class="product-title-bg">
+                <h3>Rød Nike</h3>
+            </div>
+          <div class="img-container">
+            <img
+              src="images\domino-studio-164_6wVEHfI-unsplash.jpg"
+              alt="generic sneaker on yellow background"
+            />
+        
+          </div>
+
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              facilis repellendus officia aperiam esse nesciunt, libero aliquam
+              blanditiis reiciendis neque sed numquam, dolore eveniet explicabo,
+              sequi dicta totam modi corrupti.
+            </p>
+            <button class="button button--buy"> <a href="html/basket.html">Purchase</a> </button>
+            <button class="button button--action"> <a href="html/more.html">More</a></button>
+          </article>
         </div>
-        <div>
-            <h3>New Balance</h3>
-            <img src="images/felipepelaquim-6zO5VKogoZE-unsplash.jpg" alt="new Balance">
-            <!-- Photo by <a href="https://unsplash.com/@felipepelaquim?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">@felipepelaquim</a> on <a href="https://unsplash.com/photos/black-and-white-new-balance-low-top-sneaker-6zO5VKogoZE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-            -->
+
+        <div class="product">
+
+            <div class="product-title-bg">
+          <h3>Oransje Nike</h3>
         </div>
+          <div class="img-container">
+            <img
+              src="images\maksim-larin-NOpsC3nWTzY-unsplash.jpg"
+              alt="Nike shoe suspended in air"
+            />
+           <!-- 
           
-        </section>
+             -->
+          </div>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              facilis repellendus officia aperiam esse nesciunt, libero aliquam
+              blanditiis reiciendis neque sed numquam, dolore eveniet explicabo,
+              sequi dicta totam modi corrupti.
+            </p>
+            <button class="button button--buy"> <a href="html/basket.html">Purchase</a> </button>
+            <button class="button button--action"> <a href="html/more.html">More</a></button>
+          </article>
+        </div>
+
+        <div class="product">
+            <div class="product-title-bg">
+
+          <h3>New Balance</h3>
+        </div>
+          <div class="img-container">
+            <img
+              src="images\maksim-larin-ezdrvzA1hZw-unsplash.jpg"
+              alt="new Balance"
+            />
+            <!-- 
+           
+               -->
+          </div>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              facilis repellendus officia aperiam esse nesciunt, libero aliquam
+              blanditiis reiciendis neque sed numquam, dolore eveniet explicabo,
+              sequi dicta totam modi corrupti.
+            </p>
+            <button class="button button--buy"> <a href="html/basket.html">Purchase</a> </button>
+            <button class="button button--action"> <a href="html/more.html">More</a></button>
+          </article>
+        </div>
+
+        <div class="product">
+            <div class="product-title-bg">
+
+          <h3>Skrot sko</h3>
+        </div>
+          <div class="img-container">
+            <img
+              src="images\christian-rosswag-P_6UKCsYLNs-unsplash.jpg"
+              alt="shoe in the sand "
+            />
+            <!-- 
+           
+               -->
+          </div>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              facilis repellendus officia aperiam esse nesciunt, libero aliquam
+              blanditiis reiciendis neque sed numquam, dolore eveniet explicabo,
+              sequi dicta totam modi corrupti.
+            </p>
+            <button class="button button--buy"> <a href="html/basket.html">Purchase</a> </button>
+            <button class="button button--action"> <a href="html/more.html">More</a></button>
+          </article>
+        </div>
+      </section>
+
+
+      <div id="footerspace"></div>
+
     </main>
-</body>
+
+    
+    <footer>
+
+
+      <ul>
+        <li>
+            Full source code available at
+            <a href="https://github.com/mubb3/produktboks">GitHub</a>
+        </li>
+        <li>
+            Website also available online at <a href="">github.io.pages</a>
+        </li>
+    </ul>
+    </footer>
+  </body>
 </html>
