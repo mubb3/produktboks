@@ -78,7 +78,7 @@ li{
    
     padding-bottom: 2rem;
 
-    border: blue  3px solid;
+ /*    border: blue  3px solid; */
     margin-bottom: 40px;
     
     
@@ -343,7 +343,7 @@ footer {
         padding: 20px;
         height: 100vh;
      
-        border: rgb(128, 0, 23) 3px solid;
+      /*   border: rgb(128, 0, 23) 3px solid; */
      }
 
 }
@@ -356,13 +356,13 @@ footer {
         padding: 20px;
         height: 110vh;
      
-        border: green 3px solid;
+       /*  border: green 3px solid; */
      }
 
      nav{
         position: absolute;
         top: 60%;
-        border: red 2px solid;
+        /* border: red 2px solid; */
      }
      header{
         position: relative;
@@ -389,7 +389,7 @@ footer {
         padding: 20px;
          height: 200vh;
         margin-bottom: 20px;
-         border: yellow 3px solid;
+       /*   border: yellow 3px solid; */
      }
 
      footer{
@@ -427,7 +427,7 @@ footer {
 
 main{
     height: auto;
-    border: red solid 2px;
+   /*  border: red solid 2px; */
 }
 
     .product-container {
