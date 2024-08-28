@@ -49,7 +49,7 @@ h1 {
 }
 
 h1:hover {
-  font-size: 3.2rem;
+ /*  font-size: 3.2rem; */
   transition: 0.2s;
 }
 
@@ -136,7 +136,7 @@ a:active {
 }
 li:hover {
   text-decoration: underline;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   transition: 0.2s;
   cursor: pointer;
 }
@@ -336,17 +336,13 @@ z-index: 2090; */
     /*  border: green 3px solid; */
   }
 
-  nav {
-    position: absolute;
-    top: 60%;
-    /* border: red 2px solid; */
-  }
+
   header {
     position: relative;
     top: 0;
     width: 100vw;
     z-index: 4;
-    height: 5rem;
+    height: 10rem;
   }
   h1 {
     font-size: 2rem;
@@ -361,12 +357,7 @@ z-index: 2090; */
     margin-bottom: 20px;
     /*   border: yellow 3px solid; */
   }
-  /* 
-     footer{
-        position: static;
-        bottom: 0;
-        
-     } */
+
   .product {
     width: 20rem;
   }
@@ -938,7 +929,7 @@ z-index: 2090; */
         font-size: 1rem;
       }
       h1:hover {
-        font-size: 3rem;
+        font-size: 1rem;
       }
       * {
         transition: none !important;
